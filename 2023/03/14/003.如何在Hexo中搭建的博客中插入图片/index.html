@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <title>
       
-        散文 | Hexo
+        如何在Hexo中搭建的博客中插入图片 | Hexo
       
     </title>
     <meta name="description" content=""/>
@@ -36,7 +36,8 @@
     <link rel="stylesheet" type="text/css" href="/css/layout.css"/>
     
     
-  <link rel="stylesheet" type="text/css" href="/css/category.css" />
+  <link rel="stylesheet" type="text/css" href="/css/post.css"/>
+  
 
   <meta name="generator" content="Hexo 5.4.2"></head>
   <body>
@@ -60,25 +61,68 @@
     </div>
     <div class="body">
       
-  <div class="tag-page-title">#散文</div>
-  <div class="post-list">
-    
-      <div class="post-card">
-        <div class="post__head">
-          <a href="/2023/03/14/%E5%AD%A6%E4%B9%A0%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title hover-line">学习搭建个人博客</a>
-        </div>
-        <div class="post__body">
+  <article class="post-content">
+    <div class="post-inner">
+      <div class="post-content__head">
+        <div class="post-title">如何在Hexo中搭建的博客中插入图片</div>
+        <div class="post-info">
           
-          <div class="post-excerpt"></div>
-        </div>
-        <div class="post__foot">
-          <div class="post-tags">
-            
-              <a href="/tags/%E6%95%A3%E6%96%87/" class="post-tag">#散文</a>
-            
-          </div>
+  
+    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-tag">#Hexo博客搭建</a>
+  
+
+
+          <span class="post-date">2023-03-14</span>
         </div>
       </div>
+      <div class="post-content__body">
+        
+          <div class="post-gallery">
+            
+          </div>
+        
+        <h2><span id="如何在hexo中搭建的博客中插入图片">如何在Hexo中搭建的博客中插入图片</span></h2><ol>
+<li><p>打开source文件夹，新建文件夹，示例中命名为images：</p>
+</li>
+<li><p>把要导入文章的图片预先存放在这个文件夹中（可以在其中建立子文件夹）。</p>
+</li>
+<li><p>在写好的Markdown文档中，在要插入图片的位置输入<br><code>![图片名，可以自己起名字](/images/xxx.png)</code><br>在你的markdown编辑器中，你可能看不到图片。但是在网页中，就可以看到了。</p>
+</li>
+<li><p>如何将图片居中呢？</p>
+<p>设置以下 CSS 样式使图片居中：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p img, figure img &#123;</span><br><span class="line">  display: block;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">  max-width: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个我暂时没亲自设置，在后续补详细步骤。</p>
+</li>
+</ol>
+
+      </div>
+    </div>
+  </article>
+  <div class="post__foot">
+    
+    <div class="post-nav">
+  
+    <a class="post-nav-item-left" href="/2023/03/14/001.%E5%AD%A6%E4%B9%A0%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+      <div class="text-align">
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596"/>
+        </svg>
+        <span class="text-small">上一篇</span>
+      </div>
+      <div>学习搭建个人博客</div>
+    </a>
+  
+  <div class="vhr"></div>
+  
+    <div class="post-nav-item-right"></div>
+  
+</div>
+
     
     
   </div>
@@ -175,6 +219,7 @@
     </div>
     
     
-    
+  
+
   </body>
 </html>
